@@ -11,7 +11,9 @@ To automate the application build and deployment process using CI/CD practices, 
 ---
 
 ## 🏗️ Architecture
+```bash
 GitHub → Jenkins → Docker → Docker Hub
+```
 
 ---
 
@@ -43,7 +45,7 @@ GitHub → Jenkins → Docker → Docker Hub
 ---
 
 ## 📂 Project Structure
-
+```bash
 react-cicd-docker-jenkins/
 ├── app/
 ├── Dockerfile
@@ -51,4 +53,43 @@ react-cicd-docker-jenkins/
 ├── .gitignore
 ├── README.md
 └── screenshots/
+```
 
+---
+
+## 📸 Screenshots
+
+### Jenkins Pipeline
+![Jenkins](Screenshots/output.png)
+
+### Docker Hub Image
+![Docker](Screenshots/Dockerhub.png)
+
+### Application output
+![portfolio-landingpage](Screenshots/landingpage.png)
+
+---
+
+## 🚧 Challenges
+- Docker build issues  
+- Jenkins credential configuration  
+- Pipeline debugging  
+
+---
+
+## 📈 Outcome
+- Automated build and deployment  
+- Reduced manual effort  
+- Improved deployment consistency  
+
+---
+
+## 🚀 Future Improvements
+- Deploy to Kubernetes (EKS)  
+- Add monitoring tools  
+- Integrate automated testing  
+
+---
+
+## 📌 Summary
+Implemented a CI/CD pipeline using Jenkins and Docker to automate build and delivery of a React application.
