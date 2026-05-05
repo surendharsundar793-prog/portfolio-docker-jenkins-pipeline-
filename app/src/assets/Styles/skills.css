@@ -1,0 +1,118 @@
+.skills-section {
+  background-color: var(--bg-primary);
+  padding: 8vh 5%;
+  min-height: 100vh;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skills-header {
+  margin-bottom: 5vh;
+}
+
+.terminal-log {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-top: 15px;
+}
+
+.tree-structure {
+  font-family: var(--font-heading);
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 255, 0, 0.05);
+}
+
+.tree-root {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.tree-line, .tree-line-indent {
+  color: rgba(255, 255, 255, 0.2);
+  white-space: pre;
+  font-weight: 300;
+}
+
+.tree-folder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tree-icon-folder {
+  color: #ffd700; /* Classic folder color */
+  opacity: 0.8;
+}
+
+.folder-name {
+  color: var(--text-primary);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.tree-children {
+  display: flex;
+  flex-direction: column;
+}
+
+.tree-file {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+
+.tree-file:hover {
+  background: rgba(0, 255, 0, 0.05);
+}
+
+.tree-icon-file {
+  color: #00d4ff; /* Code file color */
+  opacity: 0.6;
+}
+
+.file-name {
+  color: #efefef;
+}
+
+.file-info {
+  margin-left: 20px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+.tree-summary {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .skills-section {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tree-structure {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
